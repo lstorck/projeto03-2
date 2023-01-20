@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+  <title>Mentoria</title>
+</head>
+<body>
+ <div class="page">
+    <header>
+      <h1>Mentoria</h1>
+      <p>Preencha o formulário abaixo para agendar a sua mentoria.</p>
+    </header>
+   <form>
+     <fieldset class="fieldset-wrapper">
+      <legend>Informações Pessoais</legend>
+      <!-- NOME E SOBRENOME -->
+      <div class="name-wrapper">
+        <label for="mentorship-name">Nome</label>
+        <label for="mentorship-lastname">Sobrenome</label>
+        </div>
+        <div class="name-input-wrapper">
+        <input type="text" id="mentorship-name">
+        <input type="text" id="mentorship-lastname">
+        </div>
+        <!-- E-MAIL -->
+        <div class="input-wrapper">
+          <label for="mentorship-email">Email<span>(digite um email válido)</span></label>
+          <input required type="text" id="mentorship-email">
+        </div>
+        <!-- PASSWORD -->
+        <div class="input-wrapper">
+          <label for="mentorship-email">Senha<span>(Mínimo 8 caracteres)</span></label>
+          <input required
+          minlength="8"
+           type="password" id="mentorship-password">
+        </div>
+     </fieldset>
+     <fieldset class="fieldset-wrapper">
+      <legend>Informações do mentor</legend>
+      <!-- NOME DO MENTOR -->
+      <div class="input-wrapper">
+        <label for="input-mentorname">Nome do seu mentor<span>(só o primeiro nome)</span></label>
+        <input type="text" id="input-mentorname">
+      </div>
+     </fieldset>
+     <fieldset class="fieldset-wrapper">
+      <legend>Seus horários disponíveis</legend>
+      <h2>PRIMEIRA MENTORIA</h2>
+      <div class="input-wrapper">
+        <div class="data-time">
+          <label for="input-date">Data<span>(DD/MM/AAAA)</span></label>
+          <label for="input-time">Das</label>
+          <label for="input-time">Até</label>
+        </div>
+        <div class="input-date">
+          <input type="date" id="input-date">
+          <input type="time" id="input-time">
+          <input type="time" id="input-time">
+        </div>
+      </div>
+      <h2>SEGUNDA MENTORIA</h2>
+      <div class="input-wrapper">
+        <div class="data-time">
+          <label for="input-date">Data<span>(DD/MM/AAAA)</span></label>
+          <label for="input-time">Das</label>
+          <label for="input-time">Até</label>
+        </div>
+        <div class="input-date">
+          <input type="date" id="input-date">
+          <input type="time" id="input-time">
+          <input type="time" id="input-time">
+        </div>
+      </div>
+     </fieldset>
+    </form>
+    <footer>
+      <button>SALVAR</button>
+    </footer>
+    </div>
+  </div>
+</body>
+</html>
